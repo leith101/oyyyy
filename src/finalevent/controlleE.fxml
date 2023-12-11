@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="934.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalevent.ControlleEController">
+    <stylesheets>
+        <URL value="@dashboard.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" focusTraversable="true" layoutX="200.0" layoutY="153.0" prefHeight="444.0" prefWidth="834.0" stylesheets="@../../../../New%20Folder/events/src/dashboard.css">
+         <children>
+            <TextField fx:id="textfield_ajout_name" layoutX="14.0" layoutY="100.0" prefHeight="17.0" prefWidth="175.0" promptText="nom" styleClass="label-record-design" stylesheets="@../dashboard.css" />
+            <DatePicker fx:id="date_picker_ajout" layoutX="14.0" layoutY="179.0" prefHeight="26.0" prefWidth="150.0" promptText="select the date" styleClass="chart-Button" stylesheets="@../dashboard.css" />
+            <TextField fx:id="textfield_ajout_price" layoutX="14.0" layoutY="141.0" prefHeight="17.0" prefWidth="175.0" promptText="price" styleClass="label-record-design" stylesheets="@../dashboard.css" />
+            <TextArea fx:id="text_field_discription_ajout" layoutX="14.0" layoutY="211.0" prefHeight="109.0" prefWidth="175.0" promptText="description" styleClass="textfield-record-design" stylesheets="@../dashboard.css" />
+            <TextField fx:id="textfield_ajout_image" layoutX="14.0" layoutY="332.0" prefHeight="17.0" prefWidth="175.0" promptText="URL to your image" styleClass="label-record-design" stylesheets="@../dashboard.css" />
+            <Button fx:id="ajouterE" layoutX="14.0" layoutY="413.0" mnemonicParsing="false" onAction="#activateAjouterE" prefHeight="26.0" prefWidth="71.0" styleClass="navbutton" stylesheets="@../dashboard.css" text="ajouter" />
+            <TextField fx:id="textfield_modifier_name" layoutX="265.0" layoutY="141.0" prefHeight="17.0" prefWidth="175.0" promptText="nom" styleClass="label-record-design" stylesheets="@../dashboard.css" />
+            <TextField fx:id="textfield_modifier_price" layoutX="265.0" layoutY="178.0" prefHeight="17.0" prefWidth="175.0" promptText="Price" styleClass="label-record-design" stylesheets="@../dashboard.css" />
+            <DatePicker fx:id="date_picker_modifier" layoutX="265.0" layoutY="218.0" prefHeight="26.0" prefWidth="150.0" promptText="select the date" styleClass="chart-Button" stylesheets="@../dashboard.css" />
+            <TextField fx:id="textfield_modifier_id" layoutX="265.0" layoutY="100.0" prefHeight="17.0" prefWidth="175.0" promptText="ID" styleClass="label-record-design" stylesheets="@../dashboard.css" />
+            <TextArea fx:id="text_field_discription_modifier" layoutX="265.0" layoutY="266.0" prefHeight="109.0" prefWidth="175.0" promptText="description" styleClass="textfield-record-design" stylesheets="@../dashboard.css" />
+            <TextField fx:id="textfield_modifier_image" layoutX="265.0" layoutY="385.0" prefHeight="17.0" prefWidth="175.0" promptText="URL to your image" styleClass="label-record-design" stylesheets="@../dashboard.css" />
+            <Button fx:id="modifierE" layoutX="258.0" layoutY="455.0" mnemonicParsing="false" onAction="#activatemodifierE" prefHeight="26.0" prefWidth="97.0" styleClass="navbutton" stylesheets="@../dashboard.css" text="modifier" />
+            <Button fx:id="supprimerE" layoutX="369.0" layoutY="455.0" mnemonicParsing="false" onAction="#ActivateSupprimerE" prefHeight="26.0" prefWidth="88.0" styleClass="navbutton" stylesheets="@../dashboard.css" text="supprimer" />
+            <Button fx:id="backmainE" layoutX="695.0" layoutY="429.0" mnemonicParsing="false" onAction="#back_change_page" prefHeight="26.0" prefWidth="71.0" styleClass="navbutton" stylesheets="@../dashboard.css" text="Back" />
+            <Line endX="2.5999755859375" endY="443.5999755859375" layoutX="235.0" layoutY="58.0" startX="2.5999755859375" startY="-42.40000915527344" />
+            <Label layoutX="14.0" layoutY="57.0" prefHeight="26.0" prefWidth="166.0" text="add your event" textFill="#c113be">
+               <font>
+                  <Font name="Ebrima" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="258.0" layoutY="57.0" prefHeight="26.0" prefWidth="166.0" text="make the change" textFill="#c113be">
+               <font>
+                  <Font name="Ebrima" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="-100.0" endY="443.79998779296875" layoutX="557.0" layoutY="57.0" startX="-100.0" startY="-43.80000305175781" />
+            <TextField fx:id="textfield_ajout_place" layoutX="14.0" layoutY="371.0" prefHeight="17.0" prefWidth="175.0" promptText="place" styleClass="label-record-design" stylesheets="@../dashboard.css" />
+            <TextField fx:id="textfield_modifier_place" layoutX="268.0" layoutY="415.0" prefHeight="17.0" prefWidth="175.0" promptText="Place" styleClass="label-record-design" stylesheets="@../dashboard.css" />
+            <ImageView fitHeight="150.0" fitWidth="192.0" layoutX="527.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/rawef.png" />
+               </image>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+      <AnchorPane layoutY="11.0" prefHeight="633.0" prefWidth="200.0" styleClass="navbar" stylesheets="@../dashboard.css">
+         <children>
+            <Circle fill="#5c5e61" layoutX="100.0" layoutY="100.0" radius="86.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="54.0" layoutY="208.0" prefHeight="27.0" prefWidth="106.0" text="WELCOME" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="8.0" layoutY="270.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0" styleClass="navbutton" stylesheets="@../../../../../Downloads/desktop-main/desktop-main/src/tn/edu/esprit/gui/designe.css" text="           Home" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="327.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0" styleClass="navbutton" stylesheets="@../../../../../Downloads/desktop-main/desktop-main/src/tn/edu/esprit/gui/designe.css" text="     Reservation " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="383.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0" styleClass="navbutton" stylesheets="@../../../../../Downloads/desktop-main/desktop-main/src/tn/edu/esprit/gui/designe.css" text="         Event" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="440.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0" styleClass="navbutton" stylesheets="@../../../../../Downloads/desktop-main/desktop-main/src/tn/edu/esprit/gui/designe.css" text="          Shop" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="494.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0" styleClass="navbutton" stylesheets="@../../../../../Downloads/desktop-main/desktop-main/src/tn/edu/esprit/gui/designe.css" text="        Support" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="184.0" fitWidth="183.0" layoutX="5.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/3090108.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="201.0" layoutY="15.0" prefHeight="138.0" prefWidth="701.0" styleClass="card-top" stylesheets="@../dashboard.css">
+         <children>
+            <ImageView fitHeight="138.0" fitWidth="200.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/desktop-main/desktop-main/src/assets/Image/HEDIIIII.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

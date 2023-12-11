@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalevent.finalEController">
+   <children>
+      <Button fx:id="controleE" layoutX="228.0" layoutY="368.0" mnemonicParsing="false" onAction="#ChangerpageE" styleClass="navbutton" stylesheets="@../dashboard.css" text="controlle" />
+      <Button fx:id="myeventE" layoutX="227.0" layoutY="330.0" mnemonicParsing="false" onAction="#showMyevent" styleClass="navbutton" stylesheets="@../dashboard.css" text="My event" />
+      <Button fx:id="guestsE" layoutX="227.0" layoutY="412.0" mnemonicParsing="false" onAction="#showgusest" prefHeight="26.0" prefWidth="66.0" styleClass="navbutton" stylesheets="@../dashboard.css" text="guests" />
+      <Button fx:id="searchE" layoutX="229.0" layoutY="297.0" mnemonicParsing="false" onAction="#showsearch" styleClass="navbutton" stylesheets="@../dashboard.css" text="search" />
+      <DatePicker fx:id="datePickersearch" layoutX="229.0" layoutY="220.0" prefHeight="26.0" prefWidth="144.0" styleClass="navbutton" stylesheets="@../dashboard.css" />
+      <ComboBox fx:id="comboboxsearch" layoutX="229.0" layoutY="255.0" onAction="#comboBox" prefHeight="26.0" prefWidth="175.0" promptText="place" styleClass="navbutton" stylesheets="@../dashboard.css" />
+      <ImageView fx:id="imageViewE" fitHeight="114.0" fitWidth="201.0" layoutX="450.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fbf7b5975f896e87bf5a648bb52309b3.jpg" />
+         </image></ImageView>
+      <TextFlow fx:id="TextFlowE" layoutX="460.0" layoutY="306.0" prefHeight="150.0" prefWidth="245.0" textAlignment="CENTER" />
+      <Button fx:id="ParticiperE" layoutX="735.0" layoutY="412.0" mnemonicParsing="false" onAction="#participer" prefHeight="26.0" prefWidth="105.0" styleClass="navbutton" stylesheets="@../dashboard.css" text="participer" visible="false" />
+      <Line endX="-100.0" endY="316.0" layoutX="525.0" layoutY="231.0" startX="-100.0" startY="-68.79998779296875" />
+      <Label layoutX="229.0" layoutY="171.0" prefHeight="37.0" prefWidth="144.0" text="Welcome !!!" textFill="#991793">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="575.0" layoutY="171.0" prefHeight="76.0" prefWidth="327.0" text="you are one of us" textFill="#f20fd0">
+         <font>
+            <Font name="Engravers MT" size="19.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="10.0" layoutY="15.0" prefHeight="633.0" prefWidth="200.0" styleClass="navbar" stylesheets="@../dashboard.css">
+         <children>
+            <Circle fill="#5c5e61" layoutX="100.0" layoutY="100.0" radius="86.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="54.0" layoutY="208.0" prefHeight="27.0" prefWidth="106.0" text="WELCOME" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="8.0" layoutY="270.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0" styleClass="navbutton" stylesheets="@../../../../../Downloads/desktop-main/desktop-main/src/tn/edu/esprit/gui/designe.css" text="           Home" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="327.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0" styleClass="navbutton" stylesheets="@../../../../../Downloads/desktop-main/desktop-main/src/tn/edu/esprit/gui/designe.css" text="     Reservation " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="383.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0" styleClass="navbutton" stylesheets="@../../../../../Downloads/desktop-main/desktop-main/src/tn/edu/esprit/gui/designe.css" text="         Event" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="440.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0" styleClass="navbutton" stylesheets="@../../../../../Downloads/desktop-main/desktop-main/src/tn/edu/esprit/gui/designe.css" text="          Shop" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="8.0" layoutY="494.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0" styleClass="navbutton" stylesheets="@../../../../../Downloads/desktop-main/desktop-main/src/tn/edu/esprit/gui/designe.css" text="        Support" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="172.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/3090108.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="210.0" layoutY="15.0" prefHeight="138.0" prefWidth="692.0" styleClass="card-top" stylesheets="@../dashboard.css">
+         <children>
+            <ImageView fitHeight="138.0" fitWidth="200.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/desktop-main/desktop-main/src/assets/Image/HEDIIIII.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

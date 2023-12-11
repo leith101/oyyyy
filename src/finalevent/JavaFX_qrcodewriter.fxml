@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: pink;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalevent.JavaFX_QRCodeWriterController">
+    <stylesheets>
+        <URL value="@javafx_qrcodewriter.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="119.0" layoutY="14.0" prefHeight="17.0" prefWidth="398.0" text="Voici le QR code de l'événement choisi. Veuillez le capturez" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
